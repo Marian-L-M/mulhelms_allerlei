@@ -1,0 +1,42 @@
+:root {
+  --cl-main-accent: #0c2236;
+}
+
+html {
+  font-size: 62.5%; /* Set standard rem size: Standard browser 16px font size to 10px 1rem*/
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem; /* revert fontsize to 16px */
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header; /*connect to template*/
+  background-color: var(--cl-main-accent);
+}
+
+main {
+  grid-area: main;
+  background-color: #ffffff;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--cl-main-accent);
+}
