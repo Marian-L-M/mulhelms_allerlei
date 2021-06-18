@@ -7,13 +7,17 @@ Built upon template provided by code with Bashir
 ## Run React App
 
 -Need to have at least Node V12.18.4 installed Download here..
+
 - Need to have npm installed else run:
-> npm install
+  > npm install
 
 Run React App
+
 > npm start
 
-## Tools
+### Adding new products
+
+## Headings
 
 ##### Smallest heading
 
