@@ -36,7 +36,7 @@ function App() {
             </div>
             <div className="card">
                 <a href="product.html">
-                    <img className="medium" src="./img/product_sample.jpg" alt="placeholder product"/>
+                    <img className="medium" src="./img/chicken2.svg" alt="placeholder product"/>
                 </a>
                 <div className="card-body">
                     <a href="product.html">
@@ -56,7 +56,7 @@ function App() {
             </div>
             <div className="card">
                 <a href="product.html">
-                    <img className="medium" src="./img/product_sample.jpg" alt="placeholder product"/>
+                    <img className="medium" src="./img/chicken3.svg" alt="placeholder product"/>
                 </a>
                 <div className="card-body">
                     <a href="product.html">
@@ -76,7 +76,7 @@ function App() {
             </div>
             <div className="card">
                 <a href="product.html">
-                    <img className="medium" src="./img/product_sample.jpg" alt="placeholder product"/>
+                    <img className="medium" src="./img/chicken4.svg" alt="placeholder product"/>
                 </a>
                 <div className="card-body">
                     <a href="product.html">
@@ -96,7 +96,7 @@ function App() {
             </div>
             <div className="card">
                 <a href="product.html">
-                    <img className="medium" src="./img/product_sample.jpg" alt="placeholder product"/>
+                    <img className="medium" src="./img/chicken5.svg" alt="placeholder product"/>
                 </a>
                 <div className="card-body">
                     <a href="product.html">

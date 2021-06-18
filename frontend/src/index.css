@@ -108,10 +108,20 @@
   
   /* Product card */
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 0.1rem var(--cl-main-accent) solid;
     background-color: var(--cl-light-accent);
     border-radius: 0.5rem;
     margin: 1rem;
+    min-width: 20%;
+    max-width: 300px;
+  }
+
+  .card img {
+    max-height: 70%;
+    min-height: 50%;
   }
   
   .card-body {
