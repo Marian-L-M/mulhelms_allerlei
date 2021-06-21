@@ -2,8 +2,12 @@ import React from 'react';
 import data from './data';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
+import { faStarHalfAlt} from "@fortawesome/free-solid-svg-icons";
 import { faStar  as farStar } from '@fortawesome/free-regular-svg-icons';
+
+library.add(fasStar, farStar, faStarHalfAlt)
 
 function App() {
   return (
@@ -34,7 +38,8 @@ function App() {
                         <h2>{product.name}</h2>
                     </a>
                     <div className="rating">
-                        <span><i><FontAwesomeIcon icon={faStar} /></i></span>
+                        <span><i><FontAwesomeIcon icon={fasStar} /></i></span>
+                        <span><i><FontAwesomeIcon icon={faStarHalfAlt} /></i></span>
                         <span><i><FontAwesomeIcon icon={farStar} /></i></span>
                     </div>
                     <div className="price">${product.price}</div>
