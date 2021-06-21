@@ -1,4 +1,5 @@
 import React from 'react';
+import data from './data';
 
 function App() {
   return (
@@ -15,13 +16,18 @@ function App() {
       </header>
       <main>
         <div className="row center">
-            <div className="card">
-                <a href="product.html">
-                    <img className="medium" src="./img/product_sample.jpg" alt="placeholder product"/>
+          {data.products.map((product) => (
+              <div key={product._id} className="card">
+                <a href={`/product/${product._id}`}>
+                    <img 
+                      className="medium" 
+                      src={product.image}
+                      alt={product.name}
+                    />
                 </a>
                 <div className="card-body">
-                    <a href="product.html">
-                        <h2>Chicklet Normalsize White</h2>
+                    <a href={`/product/${product._id}`}>
+                        <h2>{product.name}</h2>
                     </a>
                     <div className="rating">
                         <span><i className="fa fa-star"></i></span>
@@ -29,91 +35,11 @@ function App() {
                         <span><i className="fa fa-star"></i></span>
                         <span><i className="fa fa-star-half" aria-hidden="true"></i></span>
                     </div>
-                    <div className="price">
-                        $120
-                    </div>
+                    <div className="price">${product.price}</div>
                 </div>
-            </div>
-            <div className="card">
-                <a href="product.html">
-                    <img className="medium" src="./img/chicken2.svg" alt="placeholder product"/>
-                </a>
-                <div className="card-body">
-                    <a href="product.html">
-                        <h2>Chicklet Normalsize White</h2>
-                    </a>
-                    <div className="rating">
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                    </div>
-                    <div className="price">
-                        $120
-                    </div>
-                </div>
-            </div>
-            <div className="card">
-                <a href="product.html">
-                    <img className="medium" src="./img/chicken3.svg" alt="placeholder product"/>
-                </a>
-                <div className="card-body">
-                    <a href="product.html">
-                        <h2>Chicklet Normalsize White</h2>
-                    </a>
-                    <div className="rating">
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                    </div>
-                    <div className="price">
-                        $120
-                    </div>
-                </div>
-            </div>
-            <div className="card">
-                <a href="product.html">
-                    <img className="medium" src="./img/chicken4.svg" alt="placeholder product"/>
-                </a>
-                <div className="card-body">
-                    <a href="product.html">
-                        <h2>Chicklet Normalsize White</h2>
-                    </a>
-                    <div className="rating">
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                    </div>
-                    <div className="price">
-                        $120
-                    </div>
-                </div>
-            </div>
-            <div className="card">
-                <a href="product.html">
-                    <img className="medium" src="./img/chicken5.svg" alt="placeholder product"/>
-                </a>
-                <div className="card-body">
-                    <a href="product.html">
-                        <h2>Chicklet Normalsize White</h2>
-                    </a>
-                    <div className="rating">
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                    </div>
-                    <div className="price">
-                        $120
-                    </div>
-                </div>
-            </div>
+              </div>
+            ))
+          }
         </div>
       </main>
       <footer className="row center">All rights reserved</footer>
