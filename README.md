@@ -15,6 +15,11 @@ Run React App
 
 > npm start
 
+## Fontawesome
+Install Fontawesome using npm/yarn
+
+See tutorial here: https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
+
 ### Adding new products
 
 ## Git ReadMe Templates

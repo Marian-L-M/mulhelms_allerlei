@@ -1,6 +1,10 @@
 import React from 'react';
 import data from './data';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar  as farStar } from '@fortawesome/free-regular-svg-icons';
+
 function App() {
   return (
 
@@ -10,8 +14,8 @@ function App() {
           <a href="/" className="logo">Mulhems Allerlei</a>
         </div>
         <div>
-          <a href="/cart">Cart</a>
-          <a href="/signin">Sign In</a>
+          <a href="/cart" className="trans-under">Cart</a>
+          <a href="/signin" className="trans-under">Sign In</a>
         </div>
       </header>
       <main>
@@ -30,10 +34,8 @@ function App() {
                         <h2>{product.name}</h2>
                     </a>
                     <div className="rating">
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star"></i></span>
-                        <span><i className="fa fa-star-half" aria-hidden="true"></i></span>
+                        <span><i><FontAwesomeIcon icon={faStar} /></i></span>
+                        <span><i><FontAwesomeIcon icon={farStar} /></i></span>
                     </div>
                     <div className="price">${product.price}</div>
                 </div>
