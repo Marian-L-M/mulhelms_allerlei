@@ -6,9 +6,9 @@ Built upon template provided by code with Bashir
 
 ## Run React App
 
--Need to have at least Node V12.18.4 installed Download here..
+Need to have at least Node V12.18.4 installed Download here..
 
-- Need to have npm installed else run:
+Need to have npm installed else run:
   > npm install
 
 Run React App
@@ -17,15 +17,17 @@ Run React App
 
 ### Adding new products
 
+## Git ReadMe Templates
+
 ## Headings
 
 ##### Smallest heading
 
-** Bold **
+**Bold**
 
-- - Italic \* \*
+- -Italic/* /*
 
-~~ Strikethrough ~~
+~~Strikethrough~~
 
 > Quote
 
